@@ -1,12 +1,3 @@
-// bg animation
-window.onload = function () {
-        Particles.init({
-            selector: '.background'
-        });
-};
-
-
-
 //subtitle typing animation
 function setupTypewriter(t) {
     var HTML = t.innerHTML;
