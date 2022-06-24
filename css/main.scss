@@ -8,16 +8,8 @@
 
 body {
     font-family: 'Source Code Pro', monospace;
-    background: black;
-}
-
-//canvas bg animation styling
-.background {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
+    background: rgb(0, 30, 48);
+    color: rgb(230, 230, 230);
 }
 
 
@@ -27,19 +19,16 @@ body {
     }
 
     h1 {
-        color: chartreuse;
         font-size: clamp(2rem, 5vw, 3.5rem);
     }
 
     h2 {
-        color: chartreuse;
         font-size: clamp(1.5rem, 5vw, 2rem);
         line-height: 1.3;
     }
 
     h3 {
         font-size: clamp(1.2rem, 5vw, 1.7rem);
-        color: chartreuse;
     }
 
     p {
@@ -65,16 +54,12 @@ nav {
     align-items: center;
     padding: 1rem;
 
-    img {
-        width: clamp(3rem, 5vw, 5rem);
-        height: auto;
-        cursor: pointer;
-        transition: .5s all;
-        display: inline-flex;
-
-        &:hover {
-            transform: scale(1.10);
-        }
+    .logo {
+        color: rgb(230, 230, 230);
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 1rem;
     }
 
     .nav-menu {
@@ -86,7 +71,7 @@ nav {
         gap: 1.5rem;
         position: absolute;
         top: 20rem;
-        left: 2rem;
+        left: 1rem;
 
         .nav-item {
 
@@ -97,7 +82,6 @@ nav {
 
                 &:hover {
                     display: inline-block;
-                    color: chartreuse;
                     transform: scale(1.25);
                 }
             }
@@ -137,15 +121,9 @@ nav {
         grid-area: hero;
         height: 100vh;
         padding: $main-padding;
-        transition: .5s all;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(/image/bg/rm373batch2-04.jpg);
-        background-position: center;
-        background-size: cover;
 
         .intro {
-            padding: 10% 1% 0 3%;
-            color: white;
-            transition: .5s all;
+            padding: 1rem;
 
             p {
                 position: relative;
@@ -179,13 +157,13 @@ nav {
                 padding: 1.1rem 1.5rem;
                 background: none;
                 border: 1px solid white;
-                color: chartreuse;
                 letter-spacing: .1rem;
                 transition: all .5s ease-in-out;
                 cursor: pointer;
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 1rem;
+                color: rgb(230, 230, 230);
             }
 
             button:hover {
@@ -204,7 +182,6 @@ nav {
     #about {
         grid-area: about;
         margin: $main-margin;
-        color: white;
 
         p {
             margin-top: 4rem;
@@ -229,7 +206,6 @@ nav {
 
         .workinfo {
             padding-top: 3%;
-            color: white;
         }
     }
 
@@ -254,11 +230,11 @@ nav {
             box-shadow: 3px 5px 2px white;
             transition: .3s all ease-in-out;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.05);
             }
 
-            h3{
+            h3 {
                 margin-bottom: 1rem;
             }
 
@@ -417,51 +393,10 @@ nav {
     }
 
 
-    #contact {
-        grid-area: contact;
-        margin: $main-margin;
-
-        form {
-            width: 90%;
-            display: grid;
-            margin: 5rem auto;
-
-
-            input {
-                margin-top: 0.5rem;
-                padding: 1rem;
-                border: none;
-                outline: none;
-                border-bottom: chartreuse 2px solid;
-            }
-
-            textarea {
-                border: none;
-                outline: none;
-                border-bottom: chartreuse 2px solid;
-                padding: 1rem;
-                margin-top: 0.5rem;
-            }
-
-            input[type=submit] {
-                border: none;
-                text-transform: uppercase;
-                cursor: pointer;
-                margin-top: 1rem;
-                font-weight: bold;
-                font-size: 1.1rem;
-
-                &:hover {
-                    background-color: chartreuse;
-                }
-            }
-
-        }
-    }
 
     footer {
+        margin: 5rem 0rem;
         grid-area: footer;
-        color: white;
         text-align: center;
     }
 
