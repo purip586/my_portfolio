@@ -119,11 +119,17 @@ nav {
 
     #hero {
         grid-area: hero;
-        height: 100vh;
-        padding: $main-padding;
+        padding: 5rem;
+        margin: 5rem;
+
+        background: rgba(0, 63, 95, 0.096);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(0, 68, 110, 0.31);
 
         .intro {
-            padding: 1rem;
 
             p {
                 position: relative;
@@ -181,15 +187,10 @@ nav {
 
     #about {
         grid-area: about;
-        margin: $main-margin;
+        margin: 5rem;
+        padding: 5rem;
 
         p {
-            margin-top: 4rem;
-            padding: 5% 5%;
-            border: 1px solid white;
-            box-shadow: 5px 7px 3px white;
-            text-align: justify;
-            line-height: 1.5;
 
             @media only screen and (max-width: 450px) {
                 text-align: unset;
@@ -200,27 +201,18 @@ nav {
         }
     }
 
-    #work {
-        grid-area: work;
-        margin: $main-margin;
-
-        .workinfo {
-            padding-top: 3%;
-        }
-    }
 
     #skill {
         grid-area: skill;
-        margin: $main-margin;
+        margin: 5rem;
     }
 
     .skill-wrapper {
-        margin: $main-margin;
+        margin: 5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, auto);
         gap: 5rem;
-        color: white;
 
         .skill-content {
             list-style: none;

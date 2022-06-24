@@ -127,12 +127,15 @@ nav .nav-menu .nav-item .nav-link:hover {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: hero;
-  height: 100vh;
-  padding: 10% 10% 0% 10%;
-}
-
-.container #hero .intro {
-  padding: 1rem;
+  padding: 5rem;
+  margin: 5rem;
+  background: rgba(0, 63, 95, 0.096);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 68, 110, 0.31);
 }
 
 .container #hero .intro p {
@@ -200,17 +203,8 @@ nav .nav-menu .nav-item .nav-link:hover {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: about;
-  margin: 10% 10% 0% 10%;
-}
-
-.container #about p {
-  margin-top: 4rem;
-  padding: 5% 5%;
-  border: 1px solid white;
-  -webkit-box-shadow: 5px 7px 3px white;
-          box-shadow: 5px 7px 3px white;
-  text-align: justify;
-  line-height: 1.5;
+  margin: 5rem;
+  padding: 5rem;
 }
 
 @media only screen and (max-width: 450px) {
@@ -223,28 +217,16 @@ nav .nav-menu .nav-item .nav-link:hover {
   }
 }
 
-.container #work {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: work;
-  margin: 10% 10% 0% 10%;
-}
-
-.container #work .workinfo {
-  padding-top: 3%;
-}
-
 .container #skill {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: skill;
-  margin: 10% 10% 0% 10%;
+  margin: 5rem;
 }
 
 .container .skill-wrapper {
-  margin: 10% 10% 0% 10%;
+  margin: 5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -252,7 +234,6 @@ nav .nav-menu .nav-item .nav-link:hover {
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   gap: 5rem;
-  color: white;
 }
 
 .container .skill-wrapper .skill-content {
