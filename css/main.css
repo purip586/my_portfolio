@@ -31,9 +31,9 @@ nav {
 nav .logo {
   color: #e6e6e6;
   text-decoration: none;
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: .5rem;
 }
 
 nav .nav-menu {
@@ -54,7 +54,6 @@ nav .nav-menu {
   gap: 1.5rem;
   position: absolute;
   top: 20rem;
-  left: 1rem;
 }
 
 nav .nav-menu .nav-item .nav-link {
@@ -149,9 +148,9 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 .container #hero .intro button {
   margin-top: 2rem;
-  padding: 1.1rem 1.5rem;
+  padding: 1rem 1.5rem;
   background: none;
-  border: 1px solid white;
+  border: 1px solid #679300;
   letter-spacing: .1rem;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -480,11 +479,11 @@ nav .nav-menu .nav-item .nav-link:hover {
 }
 
 .container footer {
-  margin: 5rem 0rem;
   -ms-grid-row: 7;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footer;
+  margin: 5rem 0rem;
   text-align: center;
 }
 
@@ -492,9 +491,9 @@ nav .nav-menu .nav-item .nav-link:hover {
   .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (auto)[7];
-        grid-template-rows: repeat(7, auto);
-        grid-template-areas: "hero" "about" "skill" "project" "project1" "project2" "footer";
+    -ms-grid-rows: (auto)[14];
+        grid-template-rows: repeat(14, auto);
+        grid-template-areas: "hero" "hero" "about" "about" "skill" "skill" "project" "project" "project1" "project1" "project2" "project2" "footer" "footer";
   }
 }
 /*# sourceMappingURL=main.css.map */
