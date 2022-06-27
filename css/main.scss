@@ -23,10 +23,10 @@ nav {
     padding: 1rem;
 
     .logo {
-        color: rgb(230, 230, 230);
+        color: rgb(103, 147, 0);
         text-decoration: none;
         font-size: 2rem;
-        font-weight: 300;
+        font-weight: 400;
         margin: .5rem;
     }
 
@@ -71,14 +71,12 @@ nav {
     grid-gap: .2rem;
     height: auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas:
         "hero hero"
         "about about"
         "skill skill"
         "project project"
-        "project1 project1"
-        "project2 project2"
         "footer footer"
     ;
 
@@ -199,7 +197,7 @@ nav {
                 content: "";
                 width: 3px;
                 height: 100%;
-                background-color: #448d00;
+                background-color: rgb(103, 147, 0);
                 position: absolute;
                 // left: -1px;
                 top: 0;
@@ -213,7 +211,7 @@ nav {
                     width: 18px;
                     height: 18px;
                     border-radius: 50%;
-                    border: 3px solid #448d00;
+                    border: 3px solid rgb(103, 147, 0);
                     background: rgb(0, 28, 54);
                     position: absolute;
                     left: -8px;
@@ -262,142 +260,74 @@ nav {
             background-color: rgb(103, 147, 0);
             margin-top: .5rem;
         }
-    }
 
-    #project1 {
-        grid-area: project1;
-        margin: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .project-container {
 
-        .wrapper {
-            position: relative;
-            width: 100%;
+            .project-wrapper {
+                margin: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-            img {
-                display: block;
-                position: relative;
-                max-width: 100%;
-                height: auto;
-            }
+                .wrapper {
+                    position: relative;
+                    width: 100%;
 
-            .overlay {
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                position: absolute;
-                width: 100%;
-                height: auto;
-                opacity: 0.6;
-                transition: .5s ease;
-                background-color: #448d00;
+                    img {
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+                    }
 
-                &:hover {
-                    display: none;
+                    .overlay {
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        position: absolute;
+                        width: 100%;
+                        height: auto;
+                        opacity: 0.5;
+                        transition: .5s ease;
+                        background-color: rgb(103, 147, 0);
+
+                        &:hover {
+                            display: none;
+                        }
+                    }
+                }
+
+                .project-info {
+                    width: 60%;
+                    min-height: auto;
+                    background: rgb(14, 14, 14);
+                    padding: 3%;
+                    margin-left: -10%;
+                    position: relative;
+
+                    button {
+                        border: none;
+                        font-size: 1rem;
+                        padding: 2%;
+                    }
+
+                    @media only screen and (max-width: 450px) {
+                        margin-top: -10%;
+                        width: 70%;
+                        margin-left: unset;
+                        text-align: center;
+                    }
+                }
+
+                @media only screen and (max-width: 450px) {
+                    flex-direction: column;
                 }
             }
-        }
 
-        .info {
-            width: 50%;
-            min-height: 30%;
-            transition: .5s all;
-            color: white;
-            align-items: center;
-            justify-content: center;
-            background: rgb(14, 14, 14);
-            padding: 2%;
-            margin-left: -10%;
-            position: relative;
-
-            button {
-                border: none;
-                font-size: 1rem;
-                padding: 2%;
-            }
-
-            @media only screen and (max-width: 450px) {
-                margin-top: -10%;
-                width: 70%;
-                margin-left: unset;
-                text-align: center;
-            }
-        }
-
-        @media only screen and (max-width: 450px) {
-            flex-direction: column;
         }
     }
 
-    #project2 {
-        grid-area: project2;
-        margin: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .wrapper {
-            position: relative;
-            width: 100%;
-
-            img {
-                display: block;
-                position: relative;
-                max-width: 100%;
-                height: auto;
-            }
-
-            .overlay {
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                position: absolute;
-                width: 100%;
-                height: auto;
-                opacity: 0.6;
-                transition: .5s ease;
-                background-color: #448d00;
-
-                &:hover {
-                    display: none;
-                }
-            }
-        }
-
-        .info {
-            width: 50%;
-            min-height: 30%;
-            transition: .5s all;
-            color: white;
-            align-items: center;
-            justify-content: center;
-            background: rgb(14, 14, 14);
-            padding: 3%;
-            margin-right: -10%;
-            position: relative;
-            z-index: 1000;
-
-            button {
-                border: none;
-                font-size: 1rem;
-                padding: 2%;
-            }
-
-            @media only screen and (max-width: 450px) {
-                margin-bottom: -10%;
-                width: 70%;
-                margin-right: unset;
-                text-align: center;
-            }
-        }
-
-        @media only screen and (max-width: 450px) {
-            flex-direction: column;
-        }
-    }
 
 
 
@@ -413,7 +343,7 @@ nav {
 @media only screen and (max-width: 450px) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(13, auto);
+        grid-template-rows: repeat(11, auto);
         grid-template-areas:
             "hero"
             "hero"
@@ -421,12 +351,6 @@ nav {
             "about"
             "skill"
             "project"
-            "project"
-            "project1"
-            "project1"
-            "project2"
-            "project2"
-            "footer"
             "footer"
         ;
     }
