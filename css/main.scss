@@ -171,7 +171,7 @@ nav {
     }
 
     #skill-timeline {
-        margin: 0 auto;
+        margin: 5rem;
         padding: 5rem;
         grid-area: skill;
 
@@ -246,10 +246,11 @@ nav {
 
     #project {
         grid-area: project;
-        padding: 5rem;
+        margin: 5rem;
 
         h2 {
             display: inline-block;
+            margin-left: 5rem;
         }
 
         h2::after {
@@ -301,7 +302,7 @@ nav {
                 .project-info {
                     width: 60%;
                     min-height: auto;
-                    background: rgb(14, 14, 14);
+                    background: rgb(0, 29, 50);
                     padding: 3%;
                     margin-left: -10%;
                     position: relative;
