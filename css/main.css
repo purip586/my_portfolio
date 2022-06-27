@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Source Code Pro', monospace;
-  background: #001e30;
+  background: #001b32;
   color: #e6e6e6;
 }
 
@@ -103,13 +103,6 @@ nav .nav-menu .nav-item .nav-link:hover {
   grid-area: hero;
   padding: 5rem;
   margin: 5rem;
-  background: rgba(0, 63, 95, 0.096);
-  border-radius: 16px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(0, 68, 110, 0.31);
 }
 
 .container #hero .intro p {
@@ -204,19 +197,20 @@ nav .nav-menu .nav-item .nav-link:hover {
   }
 }
 
-.container #skill {
+.container #skill-timeline {
+  margin: 0 auto;
+  padding: 5rem;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: skill;
-  margin: 5rem;
 }
 
-.container #skill h2 {
+.container #skill-timeline h2 {
   display: inline-block;
 }
 
-.container #skill h2::after {
+.container #skill-timeline h2::after {
   content: "";
   display: block;
   width: 50%;
@@ -225,57 +219,55 @@ nav .nav-menu .nav-item .nav-link:hover {
   margin-top: .5rem;
 }
 
-.container .skill-wrapper {
+.container #skill-timeline .timeline-body {
+  position: relative;
   margin: 5rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (auto)[2];
-      grid-template-rows: repeat(2, auto);
-  gap: 5rem;
+  padding: 5rem;
 }
 
-.container .skill-wrapper .skill-content {
-  list-style: none;
-  text-align: center;
-  border: 1px solid white;
-  padding: 10%;
-  -webkit-box-shadow: 3px 5px 2px white;
-          box-shadow: 3px 5px 2px white;
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
+.container #skill-timeline .timeline-body::after {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: #448d00;
+  position: absolute;
+  top: 0;
 }
 
-.container .skill-wrapper .skill-content:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.container #skill-timeline .timeline-body .timeline-item {
+  position: relative;
 }
 
-.container .skill-wrapper .skill-content h3 {
+.container #skill-timeline .timeline-body .timeline-item::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid #448d00;
+  background: #001c36;
+  position: absolute;
+  left: -8px;
+  top: 0;
+  z-index: 9;
+}
+
+.container #skill-timeline .timeline-body .timeline-item .time {
+  position: absolute;
+  left: -130px;
+  opacity: 0.7;
+}
+
+.container #skill-timeline .timeline-body .timeline-item .content {
+  margin: 1rem;
+  padding-bottom: 3rem;
+}
+
+.container #skill-timeline .timeline-body .timeline-item .content .title {
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 450px) {
-  .container .skill-wrapper .skill-content {
-    -webkit-box-shadow: unset;
-            box-shadow: unset;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .container .skill-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.container #skill-timeline .timeline-body .timeline-item .content li {
+  list-style: none;
 }
 
 .container #project {
@@ -491,9 +483,9 @@ nav .nav-menu .nav-item .nav-link:hover {
   .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (auto)[14];
-        grid-template-rows: repeat(14, auto);
-        grid-template-areas: "hero" "hero" "about" "about" "skill" "skill" "project" "project" "project1" "project1" "project2" "project2" "footer" "footer";
+    -ms-grid-rows: (auto)[13];
+        grid-template-rows: repeat(13, auto);
+        grid-template-areas: "hero" "hero" "about" "about" "skill" "project" "project" "project1" "project1" "project2" "project2" "footer" "footer";
   }
 }
 /*# sourceMappingURL=main.css.map */
