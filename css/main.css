@@ -12,6 +12,12 @@ body {
   color: #e1e1e1;
 }
 
+p,
+li,
+span {
+  font-size: 1.2rem;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -253,7 +259,7 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 .container #skill-timeline .timeline-body .timeline-item .time {
   position: absolute;
-  left: -130px;
+  left: -140px;
   opacity: 0.7;
 }
 
@@ -336,11 +342,11 @@ nav .nav-menu .nav-item .nav-link:hover {
 }
 
 .container #project .project-container .project-wrapper .project-info {
-  width: 60%;
-  min-height: auto;
+  width: 70%;
+  height: auto;
   background: #001d32;
   padding: 3%;
-  margin-left: -10%;
+  margin-left: -20%;
   position: relative;
 }
 

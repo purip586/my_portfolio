@@ -12,6 +12,12 @@ body {
     color: rgb(225, 225, 225);
 }
 
+p,
+li,
+span {
+    font-size: 1.2rem;
+}
+
 
 nav {
     position: fixed;
@@ -221,7 +227,7 @@ nav {
 
                 .time {
                     position: absolute;
-                    left: -130px;
+                    left: -140px;
                     opacity: 0.7;
                 }
 
@@ -300,11 +306,11 @@ nav {
                 }
 
                 .project-info {
-                    width: 60%;
-                    min-height: auto;
+                    width: 70%;
+                    height: auto;
                     background: rgb(0, 29, 50);
                     padding: 3%;
-                    margin-left: -10%;
+                    margin-left: -20%;
                     position: relative;
 
                     button {
