@@ -266,14 +266,8 @@ nav .nav-menu .nav-item .nav-link:hover {
   z-index: 9;
 }
 
-.container #skill-timeline .timeline-body .timeline-item .time {
-  position: absolute;
-  left: -140px;
-  opacity: 0.7;
-}
-
 .container #skill-timeline .timeline-body .timeline-item .content {
-  margin: 1rem;
+  margin-left: 1.5rem;
   padding-bottom: 3rem;
 }
 

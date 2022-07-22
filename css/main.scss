@@ -216,7 +216,6 @@ nav {
                 height: 100%;
                 background-color: rgb(103, 147, 0);
                 position: absolute;
-                // left: -1px;
                 top: 0;
             }
 
@@ -236,14 +235,8 @@ nav {
                     z-index: 9;
                 }
 
-                .time {
-                    position: absolute;
-                    left: -140px;
-                    opacity: 0.7;
-                }
-
                 .content {
-                    margin: 1rem;
+                    margin-left: 1.5rem;
                     padding-bottom: 3rem;
 
                     .title {
