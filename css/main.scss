@@ -259,7 +259,6 @@ nav {
         margin: 5rem;
 
         @media only screen and (max-width: 768px) {
-            padding: 1rem;
             margin: 1rem;
         }
 
@@ -284,6 +283,10 @@ nav {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @media only screen and (max-width: 768px) {
+                    margin: 3rem 1rem;
+                }
 
                 .wrapper {
                     position: relative;
@@ -330,7 +333,7 @@ nav {
 
                     @media only screen and (max-width: 768px) {
                         margin-top: -10%;
-                        width: 70%;
+                        width: 80%;
                         margin-left: unset;
                         text-align: center;
                     }

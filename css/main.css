@@ -286,7 +286,6 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 @media only screen and (max-width: 768px) {
   .container #project {
-    padding: 1rem;
     margin: 1rem;
   }
 }
@@ -316,6 +315,12 @@ nav .nav-menu .nav-item .nav-link:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container #project .project-container .project-wrapper {
+    margin: 3rem 1rem;
+  }
 }
 
 .container #project .project-container .project-wrapper .wrapper {
@@ -366,7 +371,7 @@ nav .nav-menu .nav-item .nav-link:hover {
 @media only screen and (max-width: 768px) {
   .container #project .project-container .project-wrapper .project-info {
     margin-top: -10%;
-    width: 70%;
+    width: 80%;
     margin-left: unset;
     text-align: center;
   }
