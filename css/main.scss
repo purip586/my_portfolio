@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
@@ -15,7 +16,7 @@ body {
 p,
 li,
 span {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -73,23 +74,17 @@ nav {
 }
 
 .container {
-    display: grid;
-    grid-gap: .2rem;
-    height: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:
-        "hero hero"
-        "about about"
-        "skill skill"
-        "project project"
-        "footer footer"
-    ;
+
 
     #hero {
         grid-area: hero;
         padding: 5rem;
         margin: 5rem;
+
+        @media only screen and (max-width: 768px) {
+            padding: 1rem;
+            margin: 1rem;
+        }
 
         .intro {
 
@@ -140,7 +135,7 @@ nav {
             }
 
             @media only screen and (max-width: 450px) {
-                padding-top: 40%;
+                padding-top: 30%;
             }
 
         }
@@ -151,6 +146,11 @@ nav {
         grid-area: about;
         margin: 5rem;
         padding: 5rem;
+
+        @media only screen and (max-width: 768px) {
+            padding: 1rem;
+            margin: 1rem;
+        }
 
         h2 {
             display: inline-block;
@@ -172,6 +172,7 @@ nav {
                 border: unset;
                 box-shadow: unset;
                 padding: unset;
+                font-size: 1rem;
             }
         }
     }
@@ -180,6 +181,11 @@ nav {
         margin: 5rem;
         padding: 5rem;
         grid-area: skill;
+
+        @media only screen and (max-width: 768px) {
+            padding: 1rem;
+            margin: 1rem;
+        }
 
         h2 {
             display: inline-block;
@@ -198,6 +204,11 @@ nav {
             position: relative;
             margin: 7rem;
             padding: 5rem;
+
+            @media only screen and (max-width: 768px) {
+                padding: 1rem;
+                margin: 1rem;
+            }
 
             &::after {
                 content: "";
@@ -253,6 +264,11 @@ nav {
     #project {
         grid-area: project;
         margin: 5rem;
+
+        @media only screen and (max-width: 768px) {
+            padding: 1rem;
+            margin: 1rem;
+        }
 
         h2 {
             display: inline-block;
@@ -319,7 +335,7 @@ nav {
                         padding: 2%;
                     }
 
-                    @media only screen and (max-width: 450px) {
+                    @media only screen and (max-width: 768px) {
                         margin-top: -10%;
                         width: 70%;
                         margin-left: unset;
@@ -327,7 +343,7 @@ nav {
                     }
                 }
 
-                @media only screen and (max-width: 450px) {
+                @media only screen and (max-width: 768px) {
                     flex-direction: column;
                 }
             }
@@ -344,21 +360,4 @@ nav {
         text-align: center;
     }
 
-}
-
-
-@media only screen and (max-width: 450px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(11, auto);
-        grid-template-areas:
-            "hero"
-            "hero"
-            "about"
-            "about"
-            "skill"
-            "project"
-            "footer"
-        ;
-    }
 }

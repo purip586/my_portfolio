@@ -4,6 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 p,
 li,
 span {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 nav {
@@ -90,25 +91,17 @@ nav .nav-menu .nav-item .nav-link:hover {
   }
 }
 
-.container {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: .2rem;
-  height: auto;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (auto)[5];
-      grid-template-rows: repeat(5, auto);
-      grid-template-areas: "hero hero" "about about" "skill skill" "project project" "footer footer";
-}
-
 .container #hero {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: hero;
   padding: 5rem;
   margin: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container #hero {
+    padding: 1rem;
+    margin: 1rem;
+  }
 }
 
 .container #hero .intro p {
@@ -167,17 +160,21 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 @media only screen and (max-width: 450px) {
   .container #hero .intro {
-    padding-top: 40%;
+    padding-top: 30%;
   }
 }
 
 .container #about {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: about;
   margin: 5rem;
   padding: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container #about {
+    padding: 1rem;
+    margin: 1rem;
+  }
 }
 
 .container #about h2 {
@@ -200,16 +197,21 @@ nav .nav-menu .nav-item .nav-link:hover {
     -webkit-box-shadow: unset;
             box-shadow: unset;
     padding: unset;
+    font-size: 1rem;
   }
 }
 
 .container #skill-timeline {
   margin: 5rem;
   padding: 5rem;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: skill;
+}
+
+@media only screen and (max-width: 768px) {
+  .container #skill-timeline {
+    padding: 1rem;
+    margin: 1rem;
+  }
 }
 
 .container #skill-timeline h2 {
@@ -229,6 +231,13 @@ nav .nav-menu .nav-item .nav-link:hover {
   position: relative;
   margin: 7rem;
   padding: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container #skill-timeline .timeline-body {
+    padding: 1rem;
+    margin: 1rem;
+  }
 }
 
 .container #skill-timeline .timeline-body::after {
@@ -277,11 +286,15 @@ nav .nav-menu .nav-item .nav-link:hover {
 }
 
 .container #project {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: project;
   margin: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container #project {
+    padding: 1rem;
+    margin: 1rem;
+  }
 }
 
 .container #project h2 {
@@ -356,7 +369,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   padding: 2%;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
   .container #project .project-container .project-wrapper .project-info {
     margin-top: -10%;
     width: 70%;
@@ -365,7 +378,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
   .container #project .project-container .project-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -375,21 +388,8 @@ nav .nav-menu .nav-item .nav-link:hover {
 }
 
 .container footer {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: footer;
   margin: 5rem 0rem;
   text-align: center;
-}
-
-@media only screen and (max-width: 450px) {
-  .container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (auto)[11];
-        grid-template-rows: repeat(11, auto);
-        grid-template-areas: "hero" "hero" "about" "about" "skill" "project" "footer";
-  }
 }
 /*# sourceMappingURL=main.css.map */
