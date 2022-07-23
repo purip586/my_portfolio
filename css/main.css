@@ -16,7 +16,15 @@ body {
 p,
 li,
 span {
-  font-size: 1rem;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  p,
+  li,
+  span {
+    font-size: 1rem;
+  }
 }
 
 nav {
@@ -187,17 +195,6 @@ nav .nav-menu .nav-item .nav-link:hover {
   height: 3px;
   background-color: #679300;
   margin-top: .5rem;
-}
-
-@media only screen and (max-width: 450px) {
-  .container #about p {
-    text-align: unset;
-    border: unset;
-    -webkit-box-shadow: unset;
-            box-shadow: unset;
-    padding: unset;
-    font-size: 1rem;
-  }
 }
 
 .container #skill-timeline {
