@@ -362,6 +362,10 @@ nav .nav-menu .nav-item .nav-link:hover {
   position: relative;
 }
 
+.container #project .project-container .project-wrapper .project-info p {
+  margin-top: 1rem;
+}
+
 .container #project .project-container .project-wrapper .project-info button {
   border: none;
   font-size: 1rem;
