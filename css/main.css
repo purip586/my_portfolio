@@ -209,7 +209,7 @@ nav .nav-menu .nav-item .nav-link:hover {
 @media only screen and (max-width: 768px) {
   .container #skill-timeline {
     padding: 0rem;
-    margin: 1rem;
+    margin: 5rem 1rem;
   }
 }
 
@@ -235,7 +235,7 @@ nav .nav-menu .nav-item .nav-link:hover {
 @media only screen and (max-width: 768px) {
   .container #skill-timeline .timeline-body {
     padding: 0rem;
-    margin: 3rem 1rem;
+    margin: 5rem 1rem;
   }
 }
 
@@ -319,7 +319,7 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 @media only screen and (max-width: 768px) {
   .container #project .project-container .project-wrapper {
-    margin: 4rem 0rem;
+    margin: 5rem 0rem;
   }
 }
 

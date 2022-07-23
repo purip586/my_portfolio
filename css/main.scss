@@ -183,7 +183,7 @@ nav {
 
         @media only screen and (max-width: 768px) {
             padding: 0rem;
-            margin: 1rem;
+            margin: 5rem 1rem;
         }
 
         h2 {
@@ -206,7 +206,7 @@ nav {
 
             @media only screen and (max-width: 768px) {
                 padding: 0rem;
-                margin: 3rem 1rem;
+                margin: 5rem 1rem;
             }
 
             &::after {
@@ -285,7 +285,7 @@ nav {
                 justify-content: center;
 
                 @media only screen and (max-width: 768px) {
-                    margin: 4rem 0rem;
+                    margin: 5rem 0rem;
                 }
 
                 .wrapper {
