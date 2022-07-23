@@ -13,9 +13,21 @@ body {
     color: rgb(225, 225, 225);
 }
 
+h2 {
+    font-size: 2rem;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
 h3 {
     font-size: 1.5rem;
     font-weight: 500;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.3rem;
+    }
 }
 
 h5 {
