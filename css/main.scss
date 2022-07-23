@@ -51,7 +51,7 @@ nav {
 
             .nav-link {
                 color: white;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 transition: .5s all ease-in-out;
 
                 &:hover {
@@ -64,7 +64,6 @@ nav {
         @media only screen and (max-width: 768px) {
             flex-direction: row;
             justify-content: flex-end;
-            position: fixed;
             top: 1rem;
             right: 1rem;
         }
@@ -82,7 +81,7 @@ nav {
         margin: 5rem;
 
         @media only screen and (max-width: 768px) {
-            padding: 1rem;
+            padding: 0rem;
             margin: 1rem;
         }
 
@@ -134,7 +133,7 @@ nav {
                 color: black;
             }
 
-            @media only screen and (max-width: 450px) {
+            @media only screen and (max-width: 768px) {
                 padding-top: 30%;
             }
 
@@ -148,8 +147,8 @@ nav {
         padding: 5rem;
 
         @media only screen and (max-width: 768px) {
-            padding: 1rem;
-            margin: 1rem;
+            padding: 0rem;
+            margin: 5rem 1rem;
         }
 
         h2 {
@@ -183,7 +182,7 @@ nav {
         grid-area: skill;
 
         @media only screen and (max-width: 768px) {
-            padding: 1rem;
+            padding: 0rem;
             margin: 1rem;
         }
 
@@ -206,8 +205,8 @@ nav {
             padding: 5rem;
 
             @media only screen and (max-width: 768px) {
-                padding: 1rem;
-                margin: 1rem;
+                padding: 0rem;
+                margin: 3rem 1rem;
             }
 
             &::after {
@@ -257,14 +256,15 @@ nav {
     #project {
         grid-area: project;
         margin: 5rem;
+        padding: 5rem;
 
         @media only screen and (max-width: 768px) {
             margin: 1rem;
+            padding: 0rem;
         }
 
         h2 {
             display: inline-block;
-            margin-left: 5rem;
         }
 
         h2::after {
@@ -279,13 +279,13 @@ nav {
         .project-container {
 
             .project-wrapper {
-                margin: 5rem;
+                margin: 7rem 0rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
                 @media only screen and (max-width: 768px) {
-                    margin: 3rem 1rem;
+                    margin: 4rem 0rem;
                 }
 
                 .wrapper {
@@ -329,11 +329,12 @@ nav {
                         border: none;
                         font-size: 1rem;
                         padding: 2%;
+                        background: #ddd;
                     }
 
                     @media only screen and (max-width: 768px) {
                         margin-top: -10%;
-                        width: 80%;
+                        width: 90%;
                         margin-left: unset;
                         text-align: center;
                     }

@@ -65,7 +65,7 @@ nav .nav-menu {
 
 nav .nav-menu .nav-item .nav-link {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   -webkit-transition: .5s all ease-in-out;
   transition: .5s all ease-in-out;
 }
@@ -85,7 +85,6 @@ nav .nav-menu .nav-item .nav-link:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    position: fixed;
     top: 1rem;
     right: 1rem;
   }
@@ -99,7 +98,7 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 @media only screen and (max-width: 768px) {
   .container #hero {
-    padding: 1rem;
+    padding: 0rem;
     margin: 1rem;
   }
 }
@@ -158,7 +157,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   color: black;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
   .container #hero .intro {
     padding-top: 30%;
   }
@@ -172,8 +171,8 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 @media only screen and (max-width: 768px) {
   .container #about {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0rem;
+    margin: 5rem 1rem;
   }
 }
 
@@ -209,7 +208,7 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 @media only screen and (max-width: 768px) {
   .container #skill-timeline {
-    padding: 1rem;
+    padding: 0rem;
     margin: 1rem;
   }
 }
@@ -235,8 +234,8 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 @media only screen and (max-width: 768px) {
   .container #skill-timeline .timeline-body {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0rem;
+    margin: 3rem 1rem;
   }
 }
 
@@ -282,17 +281,18 @@ nav .nav-menu .nav-item .nav-link:hover {
 .container #project {
   grid-area: project;
   margin: 5rem;
+  padding: 5rem;
 }
 
 @media only screen and (max-width: 768px) {
   .container #project {
     margin: 1rem;
+    padding: 0rem;
   }
 }
 
 .container #project h2 {
   display: inline-block;
-  margin-left: 5rem;
 }
 
 .container #project h2::after {
@@ -305,7 +305,7 @@ nav .nav-menu .nav-item .nav-link:hover {
 }
 
 .container #project .project-container .project-wrapper {
-  margin: 5rem;
+  margin: 7rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +319,7 @@ nav .nav-menu .nav-item .nav-link:hover {
 
 @media only screen and (max-width: 768px) {
   .container #project .project-container .project-wrapper {
-    margin: 3rem 1rem;
+    margin: 4rem 0rem;
   }
 }
 
@@ -366,12 +366,13 @@ nav .nav-menu .nav-item .nav-link:hover {
   border: none;
   font-size: 1rem;
   padding: 2%;
+  background: #ddd;
 }
 
 @media only screen and (max-width: 768px) {
   .container #project .project-container .project-wrapper .project-info {
     margin-top: -10%;
-    width: 80%;
+    width: 90%;
     margin-left: unset;
     text-align: center;
   }
