@@ -158,8 +158,8 @@ nav {
             }
 
             button:hover {
-                background: white;
-                color: rgb(23, 26, 43);
+                background: rgb(29, 34, 65);
+                color: #eeee;
             }
 
             @media only screen and (max-width: 768px) {
@@ -244,7 +244,7 @@ nav {
                     width: 18px;
                     height: 18px;
                     border-radius: 50%;
-                    border: 3px solid rgb(23, 26, 43);
+                    border: 3px solid rgb(29, 34, 65);
                     background: rgb(23, 26, 43);
                     position: absolute;
                     left: -8px;
@@ -352,7 +352,7 @@ nav {
                         border: none;
                         font-size: 1rem;
                         padding: .5rem 1rem;
-                        background: #ddd;
+                        background: #eeee;
                     }
 
                     @media only screen and (max-width: 768px) {

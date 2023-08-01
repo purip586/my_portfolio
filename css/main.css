@@ -144,8 +144,8 @@ nav .nav-menu .nav-item .nav-link:hover {
   font-size: 1rem;
 }
 .container #hero .intro button:hover {
-  background: white;
-  color: rgb(23, 26, 43);
+  background: rgb(29, 34, 65);
+  color: rgba(238, 238, 238, 0.9333333333);
 }
 @media only screen and (max-width: 768px) {
   .container #hero .intro {
@@ -223,7 +223,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  border: 3px solid rgb(23, 26, 43);
+  border: 3px solid rgb(29, 34, 65);
   background: rgb(23, 26, 43);
   position: absolute;
   left: -8px;
@@ -314,7 +314,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   border: none;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  background: #ddd;
+  background: rgba(238, 238, 238, 0.9333333333);
 }
 @media only screen and (max-width: 768px) {
   .container #project .project-container .project-wrapper .project-info {
