@@ -5,12 +5,11 @@
     scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
-    font-family: 'Source Code Pro', monospace;
-    background: rgb(0, 27, 50);
-    color: rgb(225, 225, 225);
+    font-family: 'Open Sans', sans-serif;
+    background: #f0f0f0;
 }
 
 h2 {
@@ -59,7 +58,7 @@ nav {
     padding: 1rem;
 
     .logo {
-        color: rgb(103, 147, 0);
+        color: rgb(23, 26, 43);
         text-decoration: none;
         font-size: 2rem;
         font-weight: 400;
@@ -79,7 +78,7 @@ nav {
         .nav-item {
 
             .nav-link {
-                color: white;
+                color: black;
                 font-size: 1.1rem;
                 transition: .5s all ease-in-out;
 
@@ -98,11 +97,9 @@ nav {
         }
     }
 
-
 }
 
 .container {
-
 
     #hero {
         grid-area: hero;
@@ -117,7 +114,7 @@ nav {
         .intro {
 
             h1 {
-                color: rgb(103, 147, 0);
+                color: rgb(23, 26, 43);
                 font-size: 2.5rem;
             }
 
@@ -151,19 +148,18 @@ nav {
                 margin-top: 2rem;
                 padding: 1rem 1.5rem;
                 background: none;
-                border: 1px solid rgb(103, 147, 0);
+                border: 1px solid rgb(23, 26, 43);
                 letter-spacing: .1rem;
                 transition: all .5s ease-in-out;
                 cursor: pointer;
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 1rem;
-                color: rgb(230, 230, 230);
             }
 
             button:hover {
                 background: white;
-                color: black;
+                color: rgb(23, 26, 43);
             }
 
             @media only screen and (max-width: 768px) {
@@ -193,7 +189,7 @@ nav {
             display: block;
             width: 50%;
             height: 3px;
-            background-color: rgb(103, 147, 0);
+            background-color: rgb(23, 26, 43);
             margin-top: .5rem;
         }
     }
@@ -217,7 +213,7 @@ nav {
             display: block;
             width: 50%;
             height: 3px;
-            background-color: rgb(103, 147, 0);
+            background-color: rgb(23, 26, 43);
             margin-top: .5rem;
         }
 
@@ -235,7 +231,7 @@ nav {
                 content: "";
                 width: 3px;
                 height: 100%;
-                background-color: rgb(103, 147, 0);
+                background-color: rgb(23, 26, 43);
                 position: absolute;
                 top: 0;
             }
@@ -248,8 +244,8 @@ nav {
                     width: 18px;
                     height: 18px;
                     border-radius: 50%;
-                    border: 3px solid rgb(103, 147, 0);
-                    background: rgb(0, 28, 54);
+                    border: 3px solid rgb(23, 26, 43);
+                    background: rgb(23, 26, 43);
                     position: absolute;
                     left: -8px;
                     top: 0;
@@ -294,7 +290,7 @@ nav {
             display: block;
             width: 50%;
             height: 3px;
-            background-color: rgb(103, 147, 0);
+            background-color: rgb(23, 26, 43);
             margin-top: .5rem;
         }
 
@@ -331,7 +327,7 @@ nav {
                         height: auto;
                         opacity: 0.5;
                         transition: .5s ease;
-                        background-color: rgb(103, 147, 0);
+                        background-color: rgb(23, 26, 43);
 
                         &:hover {
                             display: none;
@@ -342,10 +338,11 @@ nav {
                 .project-info {
                     width: 70%;
                     height: auto;
-                    background: rgb(0, 29, 50);
+                    background: rgb(23, 26, 43);
                     padding: 3%;
                     margin-left: -20%;
                     position: relative;
+                    color: white;
 
                     p {
                         margin-top: 1rem;
