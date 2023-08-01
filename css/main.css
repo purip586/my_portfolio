@@ -8,7 +8,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f0f0f0;
+  background: #27354c;
+  color: #f0f0f0;
 }
 
 h2 {
@@ -62,7 +63,7 @@ nav {
   padding: 1rem;
 }
 nav .logo {
-  color: rgb(23, 26, 43);
+  color: #f0f0f0;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 400;
@@ -79,7 +80,7 @@ nav .nav-menu {
   top: 20rem;
 }
 nav .nav-menu .nav-item .nav-link {
-  color: black;
+  color: #f0f0f0;
   font-size: 1.1rem;
   transition: 0.5s all ease-in-out;
 }
@@ -108,7 +109,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   }
 }
 .container #hero .intro h1 {
-  color: rgb(23, 26, 43);
+  color: #f0f0f0;
   font-size: 2.5rem;
 }
 .container #hero .intro p {
@@ -135,17 +136,18 @@ nav .nav-menu .nav-item .nav-link:hover {
   margin-top: 2rem;
   padding: 1rem 1.5rem;
   background: none;
-  border: 1px solid rgb(23, 26, 43);
+  border: 1px solid #f0f0f0;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1rem;
+  color: #f0f0f0;
 }
 .container #hero .intro button:hover {
-  background: rgb(29, 34, 65);
-  color: rgba(238, 238, 238, 0.9333333333);
+  background: #f0f0f0;
+  color: #27354c;
 }
 @media only screen and (max-width: 768px) {
   .container #hero .intro {
@@ -171,7 +173,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   display: block;
   width: 50%;
   height: 3px;
-  background-color: rgb(23, 26, 43);
+  background-color: #f0f0f0;
   margin-top: 0.5rem;
 }
 .container #skill-timeline {
@@ -193,7 +195,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   display: block;
   width: 50%;
   height: 3px;
-  background-color: rgb(23, 26, 43);
+  background-color: #f0f0f0;
   margin-top: 0.5rem;
 }
 .container #skill-timeline .timeline-body {
@@ -211,7 +213,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   content: "";
   width: 3px;
   height: 100%;
-  background-color: rgb(23, 26, 43);
+  background-color: #f0f0f0;
   position: absolute;
   top: 0;
 }
@@ -223,8 +225,8 @@ nav .nav-menu .nav-item .nav-link:hover {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  border: 3px solid rgb(29, 34, 65);
-  background: rgb(23, 26, 43);
+  border: 1px solid #f0f0f0;
+  background: #f0f0f0;
   position: absolute;
   left: -8px;
   top: 0;
@@ -259,7 +261,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   display: block;
   width: 50%;
   height: 3px;
-  background-color: rgb(23, 26, 43);
+  background-color: #f0f0f0;
   margin-top: 0.5rem;
 }
 .container #project .project-container .project-wrapper {
@@ -293,7 +295,7 @@ nav .nav-menu .nav-item .nav-link:hover {
   height: auto;
   opacity: 0.5;
   transition: 0.5s ease;
-  background-color: rgb(23, 26, 43);
+  background-color: #27354c;
 }
 .container #project .project-container .project-wrapper .wrapper .overlay:hover {
   display: none;
@@ -301,11 +303,11 @@ nav .nav-menu .nav-item .nav-link:hover {
 .container #project .project-container .project-wrapper .project-info {
   width: 70%;
   height: auto;
-  background: rgb(23, 26, 43);
+  background: #27354c;
   padding: 3%;
   margin-left: -20%;
   position: relative;
-  color: rgba(238, 238, 238, 0.9333333333);
+  color: #f0f0f0;
 }
 .container #project .project-container .project-wrapper .project-info p {
   margin-top: 1rem;
@@ -314,7 +316,8 @@ nav .nav-menu .nav-item .nav-link:hover {
   border: none;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  background: rgba(238, 238, 238, 0.9333333333);
+  background: #f0f0f0;
+  color: #27354c;
 }
 @media only screen and (max-width: 768px) {
   .container #project .project-container .project-wrapper .project-info {
