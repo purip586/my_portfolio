@@ -8,7 +8,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #27354c;
+  background: #0e274d;
   color: #f0f0f0;
 }
 
@@ -67,7 +67,7 @@ nav .logo {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 400;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 nav .nav-menu {
   list-style: none;
@@ -303,12 +303,12 @@ nav .nav-menu .nav-item .nav-link:hover {
 .container #project .project-container .project-wrapper .project-info {
   width: 70%;
   height: auto;
-  background: #27354c;
+  background: #0e274d;
   padding: 5%;
   margin-left: -20%;
   position: relative;
   color: #f0f0f0;
-  box-shadow: 3px 3px 5px white;
+  box-shadow: 3px 3px 3px black;
 }
 .container #project .project-container .project-wrapper .project-info p {
   margin-top: 1rem;

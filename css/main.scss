@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #27354c;
+    background: #0e274d;
     color: #f0f0f0;
 }
 
@@ -63,7 +63,7 @@ nav {
         text-decoration: none;
         font-size: 2rem;
         font-weight: 400;
-        margin: .5rem;
+        margin: 1rem;
     }
 
     .nav-menu {
@@ -340,12 +340,12 @@ nav {
                 .project-info {
                     width: 70%;
                     height: auto;
-                    background: #27354c;
+                    background: #0e274d;
                     padding: 5%;
                     margin-left: -20%;
                     position: relative;
                     color: #f0f0f0;
-                    box-shadow: 3px 3px 5px white;
+                    box-shadow: 3px 3px 3px black;
 
                     p {
                         margin-top: 1rem;
